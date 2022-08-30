@@ -1,0 +1,2332 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* family fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mingzat&family=Mulish:ital,wght@0,700;0,800;1,500;1,600;1,800&family=Nova+Flat&family=Nova+Mono&family=Nuosu+SIL&display=swap');
+
+@font-face {
+    font-family: Muli-titulos;
+    src: url('tipografia/Muli-Semi-BoldItalic.ttf');
+}
+/* header code */
+#topPagina{
+    position: sticky;
+    top: 0.1px;
+    background: white;
+    z-index: 4;
+}
+.SubFooter{
+    display: flex;
+}
+.hamburger_menu{
+    height: 48px;
+    width: 48px;
+}
+.bootom_headerA{
+    height: 30px;
+    width: 30px;
+
+}
+.bootom_headerB{
+    height: 30px;
+    width: 30px;
+}
+.icon1{
+    padding-top: 10px;
+}
+.menuHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-left: 20px;
+}
+.First_Menu{
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid #456789;
+  max-width: 200px;
+  font-variant: small-caps;
+  font-family: 'Inter', sans-serif;
+}
+.Hamburger_menu input[type="checkbox"], .Hamburger_menu .bootom_headerA, .Hamburger_menu .bootom_headerB {
+    position:absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+  }
+  /*  */
+  .hamburger_menu .bootom_headerA, .hamburger_menu .bootom_headerB {
+    font-size: 48px;
+    pointer-events: none;
+  }
+
+  .hamburger_menu input[type="checkbox"] {
+    opacity: 0;
+  }
+  .sub-listfooter{
+    width: 150px;
+    background: white;
+
+  }
+
+  .hamburger_menu {
+    color: gray;
+    position: relative;
+    min-height: 48px;
+  }
+
+  .Nav_Hamburguer {
+    display:none;
+    padding-top: 50px;
+  }
+
+  .hamburger_menu input:checked ~ nav {
+    display: block;
+
+  }
+
+  .hamburger_menu input:checked ~ .bootom_headerA {
+    display:none;
+  }
+
+  .hamburger_menu input:not(:checked) ~ .bootom_headerB {
+    display: none;
+
+  }
+  input#Open_Colse{
+    cursor: pointer;
+  }
+
+  /* transiciones en el menu icono home */
+  .Icons_Four{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    font-weight: 100;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    filter: invert(54%) sepia(12%) saturate(4%) hue-rotate(345deg) brightness(90%) contrast(89%);
+  }
+  .Icons_Four:hover{
+    filter: invert(32%) sepia(26%) saturate(784%) hue-rotate(198deg) brightness(102%) contrast(96%);
+  }
+  
+  .sub-menusectionB:hover{
+    background: #F3F3F3;
+  }
+  .sub-menusectionB{
+    text-align: center;
+    font-size: 12px;
+  }
+  .Shipping_cost{
+    background: linear-gradient(to right,blue,white);
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+  }
+  .shippinB{
+   color: #ebebeb;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%;
+  }
+
+  @keyframes color {
+    from{
+        background-position: 0% 50%;
+    }
+
+    to{
+        background-position: 100% 50%;
+    }
+  }
+
+  
+  /*  */
+.search{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.nav-search{
+    padding-left: 5px;
+}
+.nav_searchA{
+    height: 44px;
+}
+.nav_searchAB{
+    width: 44px;
+    height: 44px;
+}
+
+.logo{
+    width: 80px;
+}
+#searchPrincipal{
+    width: 650px;
+}
+.menu_section{
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    list-style: none;
+}
+.sub-menusection{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 350px;
+    padding: 5px;
+}
+
+/* section main */
+
+#principalSection{
+    padding: 10px;
+    background: #ebebeb;
+}
+.carrouselProductosmujer{
+    width: 1309px;
+}
+.Barnner_Mujer{
+    width: 1309px;
+}
+/* seccion icoonos debajo del barnner */
+.icons_home{
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: white;
+    border: 1px #ebebeb;
+    border-radius: 10px;
+}
+.section_iconsB{
+    display: flex;
+    justify-content: space-between;
+}
+.Box_iconsB{
+    border-right: 1px solid grey;
+    padding-right: 20px;
+}
+.Box_iconsA{
+    padding-left: 20px;
+}
+.SubBarnner_ofered{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.Imag_Barnner{
+    width: 400px;
+    height: 200px;
+ 
+}
+.Parr_barnnerOfer{
+    position: relative;
+    bottom: 190px;
+    left: 10px;
+    font-family: 'Mingzat', sans-serif;
+    font-weight: 600;
+}
+/* Secciones Productos Hombre-niños-mujer-hogar */
+.ConteItem{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.boxHome_productos{
+    padding: 4px;
+}
+.Tittle_secction{
+    padding-bottom: 20px;
+    color: #7c667c;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+}
+.TitleProduct{
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 10px;
+}
+.SubItemPrice{
+    font-weight: 500;
+    font-size: 20;
+    font-family: 'Nova Mono', monospace;
+}
+.ProductosParahombre{
+    padding: 30px;
+}
+.ProductosParaMujer{
+    padding: 30px;
+}
+.ProductosParaniños{
+    padding: 30px;
+}
+.ProductosParaHombreB{
+    display: flex;
+}
+.carrouselItems{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+.ImageHome_products{
+    height: 676px;
+    width: 500px;
+}
+.image_homeSection{
+    background: white;
+}
+.boxHome_productos{
+    background: white;
+    margin: 4px;
+    border-radius: 4px;
+}
+
+/* footer section */
+#FooterHome{
+    border-top: 1px solid chocolate;
+    margin: 5px;
+    padding: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.sectionFooter{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+.sub-listfooter{
+    list-style: none;
+    padding: 5px;
+}
+.Social_mediaContac{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Social_subicon{
+    height: 30px;
+    width: 30px;
+}
+.Social_inf{
+    padding-bottom: 10px;
+}
+.Social_mediaContacS{
+    display: flex;
+    justify-items: center;
+}
+.Information_bus{
+    padding-top: 8px;
+    padding-left: 4px;
+}
+.social_icon{
+    height: 30px;
+}
+
+.logo_footer{
+    padding-bottom: 10px;
+}
+.Information_entrepise{
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+.Footer_copyrigth{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+}
+.copy_footer{
+    padding-top: 10px;
+}
+.Footer_imagepaymet{
+    padding-top: 10px;
+}
+.SubFooter{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.accountCustomer{
+    padding-top: 30px;
+}
+.informationEmpresa{
+    padding-top: 30px;
+}
+.categorias{
+    padding-top: 30px;
+}
+.social_media{
+    padding-top: 30px;
+}
+.Social_mediaA{
+    padding-top: 10px;
+}
+.Contac_form{
+    padding-top: 30px;
+}
+.form_sub{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.Tittle_footerC{
+    color: #7c667c;
+}
+.Email_clib{
+    height: 30px;
+
+}
+button.Email_clib{
+    background: #ffa040;
+    border: 0px;
+}
+
+.Inf_enter{
+    padding-top: 10px;
+}
+/* terms and condition section */
+#terminosYcondiciones{
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    font-family: 'Mingzat', sans-serif;
+}
+
+/* About us section */
+/* parte 1 */
+.who_are{
+    display: flex;
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    font-family: 'Mingzat', sans-serif;
+
+}
+.who_areA{
+    max-width: 255px;
+}
+.who_areB{
+    -webkit-box-flex: 2;
+    flex: 2;
+    columns: 2;
+    column-fill: balance;
+    padding-left: 50px;
+}
+/* parte 2 */
+.ubication_are{
+    display: flex;
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+    font-family: 'Mingzat', sans-serif;
+
+}
+.Ubication_A{
+    font-size: 2.813rem;
+    color: #343434;
+    line-height: 3rem;
+    font-weight: 300px;
+    font-family: 'Mingzat', sans-serif;
+
+}
+.Our_ubicationNac{
+    background: #9546b1;
+    max-width: 450px;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 64px;
+    padding: 48px;
+    margin-left: 2px;
+    color: white;
+}
+.Our_ubicationInt{
+    background: #2dbcb6;
+    max-width: 450px;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 64px;
+    padding: 48px;
+    margin-left: 2px;
+    color: white;
+}
+/* contac_form section */
+#Contactanos{
+    padding-top: 30px;
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-bottom: 200px;
+    font-family: 'Mingzat', sans-serif;
+}
+
+/* Payment section */
+
+#principalSectionPagos{
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    font-family: 'Mingzat', sans-serif;
+}
+
+/* Track_Order */
+#seguimientopedido{
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    font-family: 'Mingzat', sans-serif;
+}
+
+.track_form{
+    display: flex;
+}
+/* .seccion productos hogar */
+
+.Productos_Hogar{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+.section_products{
+    display: inline-flex;
+    flex-direction: row;
+}
+ol{
+    list-style: none;
+}
+
+/* seccion mi cuenta */
+
+.dasboard_cliente{
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    
+   
+}
+.General_menu{
+    font-family: 'Mingzat', sans-serif;
+    font-size: larger;
+
+}
+
+.Menu_micuenta{
+    display: grid;
+}
+
+
+.Items_menucliente{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+/* seccion carritos de compra */
+
+#carrito_compras{
+    display: grid;
+    align-content: center;
+    background:#f9f9fa;
+}
+.Detalle_ordenb{
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+}
+.Detalles_compra{
+    text-align: center;
+}
+.row_cart{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    border-spacing: 0;
+}
+.Cart_items{
+    display: flex;
+    margin-top: 30px;
+ 
+}
+.tittle_cart{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    color: #818B98;
+}
+.table_items{
+    margin-right: 10px;
+    background: white;
+}
+.Detalle_ordenb{
+    background: white;
+}
+.Detalles_compra{
+    background: white;
+}
+.fotos_cart{
+    width: 100%;
+    height: 120px;
+    width: 120px;
+}
+.table_itemb{
+    padding: 10px;
+}
+
+/* media query index */
+
+@media only screen and (max-width: 480px){
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mingzat&family=Mulish:ital,wght@0,700;0,800;1,500;1,600;1,800&family=Nova+Flat&family=Nova+Mono&family=Nuosu+SIL&display=swap');
+    .home_central{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    /* header */
+    .menuHeader{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 60px;
+        padding-right: 10px;
+    }
+    .logo{
+        justify-self: center;
+        margin-left: 20px;
+    }
+    .Image_Logo{
+        height: 60px;
+        width: 60px;
+    }
+    .search{
+        position: absolute;
+        top: 76px;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    #searchPrincipal{
+        width: 100%;
+    }
+    .menu_section{
+        padding: 3px;
+        width: 100%;
+    }
+    .menu_sectionB{
+        justify-items: center;
+    }
+    .sub-menusection{
+        width: 100%;
+        justify-content: end;
+    }
+
+    .iconB{
+        display: none;
+    }
+    .iconC{
+        display: none;
+    }
+    .item_frase{
+        display: none;
+    }
+    /* main */
+    #principalSection{
+        padding: 5px;
+    }
+    .carrouselPrincipal{
+        height: 150px;
+    }
+    .carrouselProductosmujer{
+        width: 100%;
+        height: 150px;
+    }
+    .Barnner_Mujer{
+        width: 100%;
+        height: 150px;
+    }
+    /* seccion iconos */
+    .icons_home{
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Mingzat', sans-serif;
+    }
+    .section_iconsB{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: 3fr 3fr;
+        width: 100%;
+    }
+    .section_subicons{
+        justify-content: center;
+    }
+    .Box_iconsB{
+        padding: 0px;
+        border: 0px;
+    }
+    .Box_iconsA{
+        padding: 0px;
+        size: 10px;
+    }
+    .icons_pict{
+        height: 30px;
+        width: 40px;
+    }
+    /* seccion barnner_ofered */
+
+    .SubBarnner_ofered{
+        padding: 0px;
+        margin-top: 10px;
+        display: grid;
+        justify-content: normal;
+    }
+
+    .Imag_Barnner{
+        width: 100%;
+    }
+    /* seccion_hombre */
+    .SectionHombre{
+        width: 100%;
+        font-family: 'Nova Mono', monospace;
+    }
+    .ProductosParahombre{
+        padding: 0px;
+        width: 100%;
+    }
+    .image_homeSection{
+        display: none;
+    }
+    .carrouselItems{
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        width: 100%;
+        justify-items:center ;
+    }
+    .boxHome_productos{
+        height: 275px;
+        width: 170px;
+    }
+    .carrouselImage{
+        height: 180px;
+        width: 170px;
+    }
+    .Imag_home{
+        height: 180px;
+        width: 170px;
+    }
+    .ConteItem{
+        padding: 10px;
+    }
+    /* seccion mujer */
+    .ProductosParaMujer{
+        padding: 0px;
+    }
+    .ProductosParaniños{
+        padding: 0px;
+    }
+    /* footer seccion */
+    #FooterHome{
+        padding: 0px;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .information_entrepise{
+        display: none;
+    }
+    .sectionFooter{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+    }
+    .Footer_copyrigth{
+        display: grid;
+        width: 100%;
+    }
+    .Contac_form{
+        display:flex;
+        padding-top: 20px;
+    }
+    .form_sub{
+        width: 100%;
+    }
+    .prod_five{
+        display: none;
+    }
+    .Footer_copyrigth{
+        justify-content:center;
+        width: 100%;
+    }
+    .copy_footer{
+        margin: 0 auto;
+    }
+    /* seccion acerca de nosotros */
+    .who_are{
+        padding: 0px;
+        display: grid;
+        justify-items: center;
+    }
+    .who_areA{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .who_areB{
+        padding: 10px;
+    }
+    .ubication_are{
+        padding: 0px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .Our_ubicationNac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .Our_ubicationInt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .Ubication_B{
+        padding-top: 10px;
+    }
+    .Ubication_C{
+        padding-bottom: 10px;
+    }
+    .Ubication_D{
+        padding-top: 10px;
+    }
+    .Ubication_E{
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    /* seccion terminos y condiciones */
+    #terminosYcondiciones{
+        padding: 15px;
+        font-size: 15px;
+    }
+    /* seccion contactenos */
+    #Contactanos{
+        margin: 0 auto;
+        padding: 10px;
+    }
+    /* seccion metodos de pago */
+    #principalSectionPagos{
+        padding: 10px;
+    }
+    .image_pay{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .payment{
+        padding-bottom: 10px;
+    }
+    .Descrition_aboutPayment{
+        padding-bottom: 10px;
+    }
+    /* seguimiento de pedido */
+    #seguimientopedido{
+        padding: 20px;
+
+    }
+    .seguimiento_ped{
+        padding-top: 15px;
+    }
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 620px){
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mingzat&family=Mulish:ital,wght@0,700;0,800;1,500;1,600;1,800&family=Nova+Flat&family=Nova+Mono&family=Nuosu+SIL&display=swap');
+    .home_central{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    /* header */
+    .menuHeader{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 60px;
+        padding-right: 10px;
+    }
+    .logo{
+        justify-self: center;
+        margin-left: 20px;
+    }
+    .Image_Logo{
+        height: 60px;
+        width: 60px;
+    }
+    .search{
+        position: absolute;
+        top: 76px;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    #searchPrincipal{
+        width: 100%;
+    }
+    .menu_section{
+        padding: 3px;
+        width: 100%;
+    }
+    .menu_sectionB{
+        justify-items: center;
+    }
+    .sub-menusection{
+        width: 100%;
+        justify-content: end;
+    }
+    .iconB{
+        display: none;
+    }
+    .iconC{
+        display: none;
+    }
+    .item_frase{
+        display: none;
+    }
+    /* main */
+    #principalSection{
+        padding: 5px;
+    }
+    .carrouselPrincipal{
+        height: 150px;
+    }
+    .carrouselProductosmujer{
+        width: 100%;
+        height: 150px;
+    }
+    .Barnner_Mujer{
+        width: 100%;
+        height: 150px;
+    }
+    /* seccion iconos */
+    .icons_home{
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Mingzat', sans-serif;
+    }
+    .section_iconsB{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        width: 100%;
+    }
+    .section_subicons{
+        justify-content: center;
+    }
+    .Box_iconsB{
+        padding: 0px;
+        border: 0px;
+    }
+    .Box_iconsA{
+        padding: 0px;
+        size: 10px;
+    }
+    .icons_pict{
+        height: 30px;
+        width: 40px;
+    }
+    /* seccion barnner_ofered */
+
+    .SubBarnner_ofered{
+        padding: 0px;
+        margin-top: 10px;
+        display: grid;
+        justify-content: normal;
+    }
+    .Imag_Barnner{
+        width: 100%;
+    }
+    /* seccion_hombre */
+    .SectionHombre{
+        width: 100%;
+        font-family: 'Nova Mono', monospace;
+    }
+    .ProductosParahombre{
+        padding: 0px;
+    }
+    .image_homeSection{
+        display: none;
+    }
+    .prod_five{
+        display: none;
+    }
+    .carrouselItems{
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        width: 100%;
+        justify-items: center;
+    }
+    .boxHome_productos{
+        height: 295px;
+        width: 210px;
+    }
+    .carrouselImage{
+        height: 210px;
+        width: 210px;
+    }
+    .Imag_home{
+        height: 210px;
+        width: 210px;
+    }
+    .ConteItem{
+        padding: 10px;
+    }
+    /* seccion mujer */
+    .ProductosParaMujer{
+        padding: 0px;
+    }
+    .ProductosParaniños{
+        padding: 0px;
+    }
+    /* footer seccion */
+    #FooterHome{
+        padding: 0px;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .information_entrepise{
+        display: none;
+    }
+    .sectionFooter{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+    }
+    .Footer_copyrigth{
+        display: grid;
+        width: 100%;
+    }
+    .Contac_form{
+        display:flex;
+        padding-top: 20px;
+    }
+    .Footer_copyrigth{
+        justify-content:center;
+        width: 100%;
+    }
+    .suscribe{
+        padding-top: 5px;
+        padding-right: 5px;
+    }
+    .copy_footer{
+        margin: 0 auto;
+    }
+     /* seccion acerca de nosotros */
+     .who_are{
+        padding: 0px;
+        display: grid;
+        justify-items: center;
+    }
+    .who_areA{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .who_areB{
+        padding: 10px;
+    }
+    .ubication_are{
+        padding: 0px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .Our_ubicationNac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .Our_ubicationInt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .Ubication_B{
+        padding-top: 10px;
+    }
+    .Ubication_C{
+        padding-bottom: 10px;
+    }
+    .Ubication_D{
+        padding-top: 10px;
+    }
+    .Ubication_E{
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    /* seccion terminos y condiciones */
+    #terminosYcondiciones{
+        padding: 15px;
+        font-size: 15px;
+    }
+    /* seccion contactenos */
+    #Contactanos{
+        margin: 0 auto;
+        padding: 10px;
+    }
+    /* seccion metodos de pago */
+    #principalSectionPagos{
+        padding: 10px;
+    }
+    .image_pay{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .payment{
+        padding-bottom: 10px;
+    }
+    .Descrition_aboutPayment{
+        padding-bottom: 10px;
+    }
+       /* seguimiento de pedido */
+       #seguimientopedido{
+        padding: 20px;
+
+    }
+    .seguimiento_ped{
+        padding-top: 15px;
+    }
+
+}
+@media only screen and (min-width: 621px) and (max-width: 768px){
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mingzat&family=Mulish:ital,wght@0,700;0,800;1,500;1,600;1,800&family=Nova+Flat&family=Nova+Mono&family=Nuosu+SIL&display=swap');
+    .home_central{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    /* header */
+    .menuHeader{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 60px;
+        padding-right: 10px;
+    }
+    .logo{
+        justify-self: center;
+        margin-left: 20px;
+    }
+    .Image_Logo{
+        height: 60px;
+        width: 60px;
+    }
+    .search{
+        position: absolute;
+        top: 76px;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    #searchPrincipal{
+        width: 100%;
+    }
+    .menu_section{
+        padding: 3px;
+        width: 100%;
+    }
+    .menu_sectionB{
+        justify-items: center;
+    }
+    .sub-menusection{
+        width: 100%;
+        justify-content: end;
+    }
+    .iconB{
+        display: none;
+    }
+    .iconC{
+        display: none;
+    }
+    .item_frase{
+        display: none;
+    }
+    /* main */
+    #principalSection{
+        padding: 5px;
+    }
+    .carrouselPrincipal{
+        height: 190px;
+    }
+    .carrouselProductosmujer{
+        width: 100%;
+        height: 190px;
+    }
+    .Barnner_Mujer{
+        width: 100%;
+        height: 190px;
+    }
+    /* seccion iconos */
+    .icons_home{
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Mingzat', sans-serif;
+    }
+    .section_iconsB{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        width: 100%;
+    }
+    .section_subicons{
+        justify-content: center;
+    }
+    .Box_iconsB{
+        padding: 0px;
+        border: 0px;
+    }
+    .Box_iconsA{
+        padding: 0px;
+        size: 10px;
+    }
+    .icons_pict{
+        height: 30px;
+        width: 40px;
+    }
+    /* seccion barnner_ofered */
+
+    .SubBarnner_ofered{
+        padding: 0px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        justify-content: center;
+    }
+
+    .Imag_Barnner{
+        width: 100%;
+    }
+    /* seccion_hombre */
+    .SectionHombre{
+        width: 100%;
+        font-family: 'Nova Mono', monospace;
+    }
+    .ProductosParahombre{
+        padding: 0px;
+    }
+    .image_homeSection{
+        display: none;
+    }
+    .prod_four{
+        display: none;
+    }
+    .carrouselItems{
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        width: 100%;
+    }
+    .boxHome_productos{
+        height: 295px;
+        width: 190px;
+    }
+    .carrouselImage{
+        height: 210px;
+        width: 190px;
+    }
+    .Imag_home{
+        height: 210px;
+        width: 190px;
+    }
+    .ConteItem{
+        padding: 10px;
+    }
+    /* seccion mujer */
+    .ProductosParaMujer{
+        padding: 0px;
+    }
+    .ProductosParaniños{
+        padding: 0px;
+    }
+    /* footer seccion */
+    #FooterHome{
+        padding: 0px;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .information_entrepise{
+        display: inherit;
+    }
+    .sectionFooter{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+    .Footer_copyrigth{
+        display: grid;
+        width: 100%;
+    }
+    .Contac_form{
+        display:flex;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .suscribe{
+        padding-top: 5PX;
+        padding-right: 5px;
+    }
+    .Footer_copyrigth{
+        justify-content:center;
+        width: 100%;
+    }
+    .copy_footer{
+        margin: 0 auto;
+    }
+    /* seccion acerca de nosotros */
+    .who_are{
+        padding: 0px;
+        display: grid;
+        justify-items: center;
+    }
+    .who_areA{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .who_areB{
+        padding: 10px;
+    }
+    .ubication_are{
+        padding: 0px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Our_ubicationNac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .Our_ubicationInt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .Ubication_B{
+        padding-top: 10px;
+    }
+    .Ubication_C{
+        padding-bottom: 10px;
+    }
+    .Ubication_D{
+        padding-top: 10px;
+    }
+    .Ubication_E{
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    .where_Are{
+        justify-content: stretch;
+    }
+      /* seccion terminos y condiciones */
+      #terminosYcondiciones{
+        padding: 15px;
+        font-size: 15px;
+    }
+    /* seccion contactenos */
+    #Contactanos{
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    /* seccion metodos de pago */
+    #principalSectionPagos{
+        padding: 10px;
+    }
+    .image_pay{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .payment{
+        padding-bottom: 10px;
+    }
+    .Descrition_aboutPayment{
+        padding-bottom: 10px;
+    }
+       /* seguimiento de pedido */
+       #seguimientopedido{
+        padding: 20px;
+
+    }
+   
+}
+@media only screen and (min-width: 769px) and (max-width: 837px){
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mingzat&family=Mulish:ital,wght@0,700;0,800;1,500;1,600;1,800&family=Nova+Flat&family=Nova+Mono&family=Nuosu+SIL&display=swap');
+    .home_central{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    /* header */
+    .menuHeader{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 60px;
+        padding-right: 10px;
+    }
+    .logo{
+        justify-self: center;
+        margin-left: 20px;
+    }
+    .Image_Logo{
+        height: 60px;
+        width: 60px;
+    }
+    .search{
+        position: absolute;
+        top: 76px;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    #searchPrincipal{
+        width: 100%;
+    }
+    .menu_section{
+        padding: 3px;
+        width: 100%;
+    }
+    .menu_sectionB{
+        justify-items: center;
+    }
+    .sub-menusection{
+        width: 100%;
+        justify-content: end;
+    }
+    .iconB{
+        display: none;
+    }
+    .iconC{
+        display: none;
+    }
+    .item_frase{
+        display: none;
+    }
+    /* main */
+    #principalSection{
+        padding: 5px;
+    }
+    .carrouselPrincipal{
+        height: 190px;
+    }
+    .carrouselProductosmujer{
+        width: 100%;
+        height: 190px;
+    }
+    .Barnner_Mujer{
+        width: 100%;
+        height: 190px;
+    }
+    /* seccion iconos */
+    .icons_home{
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Mingzat', sans-serif;
+    }
+    .section_iconsB{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        width: 100%;
+    }
+    .section_subicons{
+        justify-content: center;
+    }
+    .Box_iconsB{
+        padding: 0px;
+        border: 0px;
+    }
+    .Box_iconsA{
+        padding: 0px;
+        size: 10px;
+    }
+    .icons_pict{
+        height: 30px;
+        width: 40px;
+    }
+    /* seccion barnner_ofered */
+
+    .SubBarnner_ofered{
+        padding: 0px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        justify-content: center;
+    }
+
+    .Imag_Barnner{
+        width: 100%;
+    }
+    /* seccion_hombre */
+    .SectionHombre{
+        width: 100%;
+        font-family: 'Nova Mono', monospace;
+    }
+    .prod_four{
+        display: none;
+    }
+    .prod_five{
+        display: none;
+    }
+    .ProductosParahombre{
+        padding: 0px;
+    }
+    .image_homeSection{
+        display: none;
+    }
+    .carrouselItems{
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        width: 100%;
+        justify-items:center ;
+    }
+    .boxHome_productos{
+        height: 295px;
+        width: 190px;
+    }
+    .carrouselImage{
+        height: 210px;
+        width: 190px;
+    }
+    .Imag_home{
+        height: 210px;
+        width: 190px;
+    }
+    .ConteItem{
+        padding: 10px;
+    }
+    /* seccion mujer */
+    .ProductosParaMujer{
+        padding: 0px;
+    }
+    .ProductosParaniños{
+        padding: 0px;
+    }
+    /* footer seccion */
+    #FooterHome{
+        padding: 0px;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .information_entrepise{
+        display: inherit;
+    }
+    .sectionFooter{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+    .Footer_copyrigth{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        justify-content:center;
+        width: 100%;
+    }
+    .Contac_form{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .suscribe{
+        padding-top: 5px;
+    }
+    .copy_footer{
+        margin: 0 auto;
+    }
+
+    /* seccion acerca de nosotros */
+    .who_are{
+        padding: 0px;
+        display: grid;
+        justify-items: center;
+    }
+    .who_areA{
+        display: flex;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .ubication_are{
+        padding: 20px;
+    }
+    .who_areB{
+        padding: 10px;
+    }
+    .Ubication_A{
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    .description_AboutUs{
+        padding-top: 10px;
+    }
+    .Our_ubicationNac{
+        padding: 20px;
+    }
+    .Our_ubicationInt{
+        padding: 10px;
+    }
+      /* seccion terminos y condiciones */
+      #terminosYcondiciones{
+        padding: 15px;
+        font-size: 15px;
+    }
+    #Contactanos{
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    /* seccion metodos de pago */
+    #principalSectionPagos{
+        padding: 10px;
+    }
+    .image_pay{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .payment{
+        padding-bottom: 10px;
+    }
+    .Descrition_aboutPayment{
+        padding-bottom: 10px;
+    }
+          /* seguimiento de pedido */
+          #seguimientopedido{
+            padding: 20px;
+    
+        }
+}
+
+@media only screen and (min-width: 838px) and (max-width: 1065px){
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mingzat&family=Mulish:ital,wght@0,700;0,800;1,500;1,600;1,800&family=Nova+Flat&family=Nova+Mono&family=Nuosu+SIL&display=swap');
+    .home_central{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    /* header */
+    .menuHeader{
+        display: grid;
+        grid-template-columns: 0.3fr 0.2fr 3fr 1fr;
+        padding-right: 10px;
+    }
+    .logo{
+        justify-self: center;
+        margin-left: 20px;
+    }
+    .Image_Logo{
+        height: 60px;
+        width: 60px;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    #searchPrincipal{
+        width: 100%;
+    }
+    .menu_section{
+        padding: 3px;
+        width: 100%;
+    }
+    .menu_sectionB{
+        justify-items: center;
+    }
+    .sub-menusection{
+        width: 100%;
+        justify-content: end;
+    }
+
+    .item_frase{
+        display: none;
+    }
+    /* main */
+    #principalSection{
+        padding: 5px;
+    }
+    .carrouselPrincipal{
+        height: 230px;
+    }
+    .carrouselProductosmujer{
+        width: 100%;
+        height: 230px;
+    }
+    .Barnner_Mujer{
+        width: 100%;
+        height: 230px;
+    }
+    /* seccion iconos */
+    .icons_home{
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Mingzat', sans-serif;
+    }
+    .section_iconsB{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        width: 100%;
+    }
+    .section_subicons{
+        justify-content: center;
+    }
+    .Box_iconsB{
+        padding: 0px;
+        border: 0px;
+        font-size: 15px;
+    }
+    .Box_iconsA{
+        padding: 0px;
+        size: 10px;
+    }
+    .icons_pict{
+        height: 30px;
+        width: 40px;
+    }
+    .Box_iconsBC{
+        font-size: 15px;
+    }
+    /* seccion barnner_ofered */
+
+    .SubBarnner_ofered{
+        padding: 0px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        justify-content: center;
+    }
+
+    .Imag_Barnner{
+        width: 100%;
+    }
+    /* seccion_hombre */
+    .SectionHombre{
+        width: 100%;
+        font-family: 'Nova Mono', monospace;
+    }
+    .ProductosParahombre{
+        padding: 0px;
+    }
+    .image_homeSection{
+        display: none;
+    }
+    .prod_five{
+        display: none;
+    }
+    .carrouselItems{
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        width: 100%;
+        justify-items: center;
+    }
+    .boxHome_productos{
+        height: 295px;
+        width: 190px;
+    }
+    .carrouselImage{
+        height: 210px;
+        width: 190px;
+    }
+    .Imag_home{
+        height: 210px;
+        width: 190px;
+    }
+    .ConteItem{
+        padding: 10px;
+    }
+    /* seccion mujer */
+    .ProductosParaMujer{
+        padding: 0px;
+    }
+    .ProductosParaniños{
+        padding: 0px;
+    }
+    /* footer seccion */
+    #FooterHome{
+        padding: 0px;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .information_entrepise{
+        display: inherit;
+    }
+    .sectionFooter{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+    .Footer_copyrigth{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        width: 100%;
+    }
+    .Contac_form{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .suscribe{
+        padding-top: 5px;
+    }
+
+    .copy_footer{
+        margin: 0 auto;
+    }
+    /* seccion acerca de nosotros */
+    .who_are{
+        padding: 0px;
+        display: grid;
+        justify-items: center;
+    }
+    .who_areA{
+        display: flex;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .ubication_are{
+        padding: 20px;
+    }
+    .who_areB{
+        padding: 10px;
+    }
+    .Ubication_A{
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    .description_AboutUs{
+        padding-top: 10px;
+    }
+    .Our_ubicationNac{
+        padding: 20px;
+    }
+    .Our_ubicationInt{
+        padding: 10px;
+    }
+      /* seccion terminos y condiciones */
+      #terminosYcondiciones{
+        padding: 15px;
+        font-size: 15px;
+    }
+    #Contactanos{
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    /* seccion metodos de pago */
+    #principalSectionPagos{
+        padding: 10px;
+    }
+    .image_pay{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .payment{
+        padding-bottom: 10px;
+    }
+    .Descrition_aboutPayment{
+        padding-bottom: 10px;
+    }
+     /* seguimiento de pedido */
+    #seguimientopedido{
+            padding: 20px;
+    
+        }
+}
+
+@media only screen and (min-width: 1066px) and (max-width: 1100px){
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mingzat&family=Mulish:ital,wght@0,700;0,800;1,500;1,600;1,800&family=Nova+Flat&family=Nova+Mono&family=Nuosu+SIL&display=swap');
+    .home_central{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    /* header */
+    .menuHeader{
+        display: grid;
+        grid-template-columns: 0.3fr 0.2fr 3fr 1fr;
+        padding-right: 10px;
+    }
+    .logo{
+        justify-self: center;
+        margin-left: 20px;
+    }
+    .Image_Logo{
+        height: 60px;
+        width: 60px;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    #searchPrincipal{
+        width: 100%;
+    }
+    .menu_section{
+        padding: 3px;
+        width: 100%;
+    }
+    .menu_sectionB{
+        justify-items: center;
+    }
+    .sub-menusection{
+        width: 100%;
+        justify-content: end;
+    }
+
+    .item_frase{
+        display: none;
+    }
+    /* main */
+    #principalSection{
+        padding: 5px;
+    }
+    .carrouselPrincipal{
+        height: 330px;
+    }
+    .carrouselProductosmujer{
+        width: 100%;
+        height: 330px;
+    }
+    .Barnner_Mujer{
+        width: 100%;
+        height: 330px;
+    }
+    /* seccion iconos */
+    .icons_home{
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Mingzat', sans-serif;
+    }
+    .section_iconsB{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        width: 100%;
+    }
+    .section_subicons{
+        justify-content: center;
+    }
+    .Box_iconsB{
+        padding: 0px;
+        border: 0px;
+        font-size: 15px;
+    }
+    .Box_iconsA{
+        padding: 0px;
+        size: 10px;
+    }
+    .icons_pict{
+        height: 30px;
+        width: 40px;
+    }
+    .Box_iconsBC{
+        font-size: 15px;
+    }
+    /* seccion barnner_ofered */
+
+    .SubBarnner_ofered{
+        padding: 0px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        justify-content: center;
+    }
+
+    .Imag_Barnner{
+        width: 100%;
+    }
+    /* seccion_hombre */
+    .SectionHombre{
+        width: 100%;
+        font-family: 'Nova Mono', monospace;
+    }
+    .ProductosParahombre{
+        padding: 0px;
+    }
+
+    .carrouselItems{
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        width: 100%;
+    }
+    .boxHome_productos{
+        height: 295px;
+        width: 170px;
+    }
+    .carrouselImage{
+        height: 210px;
+        width: 170px;
+    }
+    .Imag_home{
+        height: 210px;
+        width: 170px;
+    }
+    .ConteItem{
+        padding: 10px;
+    }
+    /* seccion mujer */
+    .ProductosParaMujer{
+        padding: 0px;
+    }
+    .ProductosParaniños{
+        padding: 0px;
+    }
+    /* footer seccion */
+    #FooterHome{
+        padding: 0px;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .information_entrepise{
+        display: inherit;
+    }
+    .sectionFooter{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+    }
+    .Footer_copyrigth{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        width: 100%;
+    }
+    .Footer_copyrigth{
+        width: 100%;
+    }
+    .Contac_form{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .suscribe{
+        padding-top: 5px;
+    }
+    .copy_footer{
+        margin: 0 auto;
+    }
+    /* seccion contactenos */
+    #Contactanos{
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    /* seccion metodos de pago */
+    #principalSectionPagos{
+        padding: 10px;
+    }
+    .image_pay{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .payment{
+        padding-bottom: 10px;
+    }
+    .Descrition_aboutPayment{
+        padding-bottom: 10px;
+    }
+    /* seguimiento de pedido */
+    #seguimientopedido{
+        padding: 20px;
+    
+    }
+    
+
+}
+@media only screen and (min-width: 1101px) and (max-width: 1200px){
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mingzat&family=Mulish:ital,wght@0,700;0,800;1,500;1,600;1,800&family=Nova+Flat&family=Nova+Mono&family=Nuosu+SIL&display=swap');
+    .home_central{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+
+    /* header */
+    .menuHeader{
+        display: grid;
+        grid-template-columns: 0.3fr 0.2fr 3fr 1fr;
+        padding-right: 10px;
+    }
+    .logo{
+        justify-self: center;
+        margin-left: 20px;
+    }
+    .Image_Logo{
+        height: 60px;
+        width: 60px;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    #searchPrincipal{
+        width: 100%;
+    }
+    .menu_section{
+        padding: 3px;
+        width: 100%;
+    }
+    .menu_sectionB{
+        justify-items: center;
+    }
+    .sub-menusection{
+        width: 100%;
+        justify-content: end;
+    }
+
+    .item_frase{
+        display: none;
+    }
+    /* main */
+    #principalSection{
+        padding: 5px;
+    }
+    .carrouselPrincipal{
+        height: 330px;
+    }
+    .carrouselProductosmujer{
+        width: 100%;
+        height: 330px;
+    }
+    .Barnner_Mujer{
+        width: 100%;
+        height: 330px;
+    }
+    /* seccion iconos */
+    .icons_home{
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Mingzat', sans-serif;
+    }
+    .section_iconsB{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        width: 100%;
+    }
+    .section_subicons{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .Box_iconsB{
+        padding: 0px;
+        border: 0px;
+        font-size: 15px;
+    }
+    .Box_iconsA{
+        padding: 0px;
+        size: 10px;
+    }
+    .icons_pict{
+        height: 30px;
+        width: 40px;
+    }
+    .Box_iconsBC{
+        font-size: 15px;
+    }
+    /* seccion barnner_ofered */
+
+    .SubBarnner_ofered{
+        padding: 0px;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        justify-content: center;
+    }
+
+    .Imag_Barnner{
+        width: 100%;
+    }
+    /* seccion_hombre */
+    .SectionHombre{
+        width: 100%;
+        font-family: 'Nova Mono', monospace;
+    }
+    .ProductosParahombre{
+        padding: 0px;
+    }
+
+    .carrouselItems{
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        width: 100%;
+    }
+    .boxHome_productos{
+        height: 295px;
+        width: 190px;
+    }
+    .carrouselImage{
+        height: 210px;
+        width: 190px;
+    }
+    .Imag_home{
+        height: 210px;
+        width: 190px;
+    }
+    .ConteItem{
+        padding: 10px;
+    }
+    /* seccion mujer */
+    .ProductosParaMujer{
+        padding: 0px;
+    }
+    .ProductosParaniños{
+        padding: 0px;
+    }
+    /* footer seccion */
+    #FooterHome{
+        padding: 0px;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .Contac_form{
+        display: flex;
+    }
+    .information_entrepise{
+        display: inherit;
+    }
+    .sectionFooter{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+    }
+
+    .Footer_copyrigth{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        width: 100%;
+    }
+    .Footer_copyrigth{
+        width: 100%;
+    }
+
+    .Contac_form{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .suscribe{
+        padding-top: 5px;
+    }
+    .copy_footer{
+        margin: 0 auto;
+    }
+    /* seccion contactenos */
+    #Contactanos{
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    /* seccion metodos de pago */
+    #principalSectionPagos{
+        padding: 10px;
+    }
+    .image_pay{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .payment{
+        padding-bottom: 10px;
+    }
+    .Descrition_aboutPayment{
+        padding-bottom: 10px;
+    }
+    /* seguimiento de pedido */
+    #seguimientopedido{
+        padding: 20px;
+    
+    }
+   
+}
